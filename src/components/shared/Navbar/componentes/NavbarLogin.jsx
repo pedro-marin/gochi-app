@@ -27,7 +27,7 @@ const NavbarLogin = (props) => {
       <div className="container-fluid ">
         <a className="navbar-brand ps-2" href="/" style={{ fontSize: "140%" }}>
           <img src={gochi_logo} width="50px" height="50px" alt="Gochi" />
-          Gochi
+          Mihuertafacil.com
         </a>
         <button
           className="navbar-toggler"
@@ -54,7 +54,7 @@ const NavbarLogin = (props) => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/cursos">
-                GochiMedia
+                RecopilacionAV
               </a>
             </li>
             <li className="nav-item ">
@@ -150,7 +150,7 @@ const NavbarLogin = (props) => {
               id="dropdownMenu"
               className="btn btn-outline-warning text-dark shadow w-100"
             >
-              GochiMedia
+              RecopilacionAV
             </a>
           </div>
           <div className="dropdown offcanvas-header">
