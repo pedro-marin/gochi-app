@@ -16,8 +16,8 @@ const Footer = () => {
             <ul className="nav col-12 col-md-4 justify-content-center justify-content-lg-end">
             <li className="nav-item "><a href="/" className="nav-link ps-0 text-muted">Home</a></li>
             <li className="nav-item "><a href="/nosotros" className="nav-link ps-0 text-muted">Nosotros</a></li>
-            <li className="nav-item "><a href="/" className="nav-link ps-0  text-danger"><BsInstagram /></a></li>
-            <li className="nav-item "><a href="/" className="nav-link ps-0  text-primary"><BsFacebook/></a></li>
+            <li className="nav-item "><a href="https://z-p15.www.instagram.com/mihuertafacil_/" className="nav-link ps-0  text-danger"><BsInstagram /></a></li>
+            <li className="nav-item "><a href="https://www.facebook.com/profile.php?id=100085545664815" className="nav-link ps-0  text-primary"><BsFacebook/></a></li>
             <li className="nav-item "><a href="/" className="nav-link ps-0 text-info"><BsTwitter/> </a></li>
             </ul>
         </footer>

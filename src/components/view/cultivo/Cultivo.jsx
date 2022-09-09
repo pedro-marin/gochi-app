@@ -154,31 +154,31 @@ const Cultivo = (props) => {
 
   const updateComentarios = (event) => {
     //event.preventDefault();
-      if (!comentario.trim()) {
-        setError("El comentario no puede ir vacío");
-        return;
-      }
-      db.collection("comentarios_cultivos")
-        .doc(cultivo.cul_name_go)
-        .collection("comentarios")
-        .doc(props.usuario.uid + `${actualDateDB()}`)
-        .set({
-          uid: `${props.usuario.uid}`,
-          cid: props.usuario.uid + `${actualDateDB()}`,
-          comentario: true,
-          username: `${props.usuario.username}`,
-          imagen: `${
-            props.usuario.img_profile !== ""
-              ? props.usuario.img_profile
-              : "https://static.platzi.com/media/avatars/avatars/pabloerazo_1c128cb8-315f-4e4a-bfbc-c36aa60aee4b.jpg"
-          }`,
-          fecha: `${actualDate()}`,
-          date: `${date()}`,
-          texto: `${comentario}`,
-        });
-      obtenerComentarios();
-      setError(null);
-      setComentario("");
+    if (!comentario.trim()) {
+      setError("El comentario no puede ir vacío");
+      return;
+    }
+    db.collection("comentarios_cultivos")
+      .doc(cultivo.cul_name_go)
+      .collection("comentarios")
+      .doc(props.usuario.uid + `${actualDateDB()}`)
+      .set({
+        uid: `${props.usuario.uid}`,
+        cid: props.usuario.uid + `${actualDateDB()}`,
+        comentario: true,
+        username: `${props.usuario.username}`,
+        imagen: `${
+          props.usuario.img_profile !== ""
+            ? props.usuario.img_profile
+            : "https://static.platzi.com/media/avatars/avatars/pabloerazo_1c128cb8-315f-4e4a-bfbc-c36aa60aee4b.jpg"
+        }`,
+        fecha: `${actualDate()}`,
+        date: `${date()}`,
+        texto: `${comentario}`,
+      });
+    obtenerComentarios();
+    setError(null);
+    setComentario("");
   };
 
   useEffect(() => {
@@ -202,8 +202,7 @@ const Cultivo = (props) => {
       <InfoBeneContraCultivo
         info_beneficios={cultivo.cul_info_nutricional_go.cul_beneficios_go}
         info_contraindicaciones={
-          cultivo.cul_info_nutricional_go.cul_contraindicaciones_go
-        }
+          cultivo.cul_info_nutricional_go.cul_contraindicaciones_go}
       />
       <div className="row">
         <div className="col-md-8">
@@ -218,7 +217,7 @@ const Cultivo = (props) => {
             <CuandoCultivar
               info_cuando_cultivar={cultivo.cul_cuando_cultivar_go}
             />
-            <ComoCultivar info_como_cultivar={cultivo.cul_como_cultivar_go} />
+            <ComoCultivar infocomo_cultivar={cultivo.cul_como_cultivar_go} />
             <Fertilizantes info_fertilizantes={cultivo.cul_fertelizantes_go} />
             <GoodBadVecinos
               info_buenos_vecinos={cultivo.cul_buenos_vecinos_go}
@@ -317,7 +316,11 @@ const Cultivo = (props) => {
                           ></button>
                         </div>
                         <div className="modal-body">
-                          <Login userprofile = {false} my={0} contenedor = {'col-11 rounded'}/>
+                          <Login
+                            userprofile={false}
+                            my={0}
+                            contenedor={"col-11 rounded"}
+                          />
                         </div>
                         <div className="modal-footer">
                           <button
@@ -349,11 +352,13 @@ const Cultivo = (props) => {
         </div>
         <div className="col-md-4">
           <div className="position-sticky" style={{ top: "2rem" }}>
-            <BannerPublicidad />
+            <BannerPublicidad info_publicidad={cultivo.cul_publicidad_go} />
             <Archivos />
           </div>
         </div>
       </div>
+      <a href="https://icons8.com/icon/1_ZaI6jvDGNo/suelo">by Icons8</a>
+      <a href="https://icons8.com/icon/vc6t1qwimoh5/growing-plant">Growing Plant icon by Icons8</a>
     </div>
   ) : (
     <Cargando />

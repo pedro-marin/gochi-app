@@ -1,14 +1,11 @@
 import React from "react";
+import Publicidad from "../../curso/cursoComponentes/Publicidad"
 
 const BannerPublicidad = (props) => {
   return (
-    <div className="p-4 mb-3 bg-light rounded">
-      <h4 className="fst-italic">About</h4>
-      <p className="mb-0">
-        Customize this section to tell your visitors a little bit about your
-        publication, writers, content, or something else entirely. Totally up to
-        you.
-      </p>
+    <div className="p-4 mb-3 bg-white rounded">
+      <h4 className="fst-italic text-center">Estos artículos son de utilidad</h4>
+      <Publicidad lista={props.info_publicidad}> </Publicidad>
     </div>
   );
 };

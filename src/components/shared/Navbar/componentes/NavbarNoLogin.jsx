@@ -120,11 +120,11 @@ function NavbarNoLogin() {
             </a>
           </div>
           <div className="offcanvas-header m-auto justify-content-between">
-            <a href="wwww.elgochiapp.com" id="sddfs" className="sfds">
+            <a href="https://z-p15.www.instagram.com/mihuertafacil_/" id="sddfs" className="sfds">
               <BsInstagram className="mx-2"
                 style={{ color: "red", marginTop: "12rem", fontSize: "30px" }}/>
               </a>
-              <a href="https://twitter">
+              <a href="https://www.facebook.com/profile.php?id=100085545664815">
                 <BsFacebook className="mx-2" style={{ marginTop: "12rem", fontSize: "30px" }} />
               </a>
               <a href="twitter">
