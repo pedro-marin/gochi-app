@@ -25,7 +25,8 @@
     
   },
   "engines": {
-    "node": "16.x.x"
+    "node": "14.2.x",
+    "npm": "8.6.x"
   },
   "scripts": {
     "start": "react-scripts start",
