@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "node": "16.16.0"
-  }
+  },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.4",
