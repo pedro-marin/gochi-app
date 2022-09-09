@@ -2,6 +2,9 @@
   "name": "google-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.16.0"
+  }
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.4",
@@ -22,6 +25,7 @@
     "style-components": "^0.1.0",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
+    
   },
   "scripts": {
     "start": "react-scripts start",
