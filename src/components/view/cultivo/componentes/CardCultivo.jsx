@@ -13,7 +13,7 @@ function CardCultivo(props) {
             <lord-icon 
               src={props.icondecultivo}
               trigger="hover"
-              style={{ width: "30%", height: "10%"}}
+              style={{ width: "50%", height: "10%"}}
             ></lord-icon>
           </>
         ) : null}

@@ -10,13 +10,13 @@ import Final from "./componentes/Final";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Gochi - Home";
+    document.title = "mihuertafacil - Home";
   }, []);
 
   return (
     <div className="">
     <InicioHome
-      titulo="Bienvenido a Gochi"
+      titulo="Bienvenido a mihuertafacil"
       descripcion="Participa de un modelo de vida sostenible. Enseña a los demás el
       respeto por la naturaleza y lo que esta ofrece."
     ></InicioHome>
