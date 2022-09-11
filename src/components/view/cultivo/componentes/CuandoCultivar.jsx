@@ -1,6 +1,6 @@
 import React from "react";
-import "https://cdn.lordicon.com/xdjxvujz.js";
-import { RiHandHeartLine } from "react-icons/ri";
+
+
 import { MdWbSunny } from "react-icons/md";
 import { FaCloudRain } from "react-icons/fa";
 const CuandoCultivar = (props) => {
