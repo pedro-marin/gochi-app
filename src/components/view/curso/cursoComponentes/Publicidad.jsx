@@ -4,7 +4,7 @@ const Publicidad = (props) => {
   const listaPublicidad = props.lista;
   const Banner = listaPublicidad.map((publicidad, index) => (
     <div class="my-3 mx-auto text-center">
-        <a href={publicidad.href} target="_blank">
+        <a href={publicidad.href} >
             <p><strong>{publicidad.descripcion}</strong></p>
             <img className="img-fluid" src={publicidad.imagen} alt={publicidad.alt} />
         </a>

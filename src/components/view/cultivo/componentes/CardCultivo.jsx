@@ -5,6 +5,7 @@ function CardCultivo(props) {
   const estilo={
     width: '30%',
     height: '10%',
+    clippath: "circle(50% at 50% 50%)"
   }
   return (
     <div class="col" bis_skin_checked="1">

@@ -1,49 +1,18 @@
 import React from "react";
 
 const Archivos = (props) => {
-  return (
-    <div className="p-4">
-      <h4 className="fst-italic">Archives</h4>
-      <ol className="list-unstyled mb-0">
-        <li>
-          <a href="/">March 2021</a>
-        </li>
-        <li>
-          <a href="/">February 2021</a>
-        </li>
-        <li>
-          <a href="/">January 2021</a>
-        </li>
-        <li>
-          <a href="/">December 2020</a>
-        </li>
-        <li>
-          <a href="/">November 2020</a>
-        </li>
-        <li>
-          <a href="/">October 2020</a>
-        </li>
-        <li>
-          <a href="/">September 2020</a>
-        </li>
-        <li>
-          <a href="/">August 2020</a>
-        </li>
-        <li>
-          <a href="/">July 2020</a>
-        </li>
-        <li>
-          <a href="/">June 2020</a>
-        </li>
-        <li>
-          <a href="/">May 2020</a>
-        </li>
-        <li>
-          <a href="/">April 2020</a>
-        </li>
-      </ol>
+  const listaArchivos = props.info_archivo;
+  const Archivos = listaArchivos.map((publicidad, index) => (
+    <div class="my-3 mx-auto text-center">
+      <p className="fs-5 fw-bold">{publicidad.nombre}</p>
+      
+        <a href={publicidad.enlace}><img src="https://img.icons8.com/office/80/000000/export-pdf.png"alt="imagen"/>
+        </a><p>{publicidad.descripcion}</p>
     </div>
-  );
+  ));
+  return <div class="d-flex flex-column my-3 bg-white">{Archivos}</div>;
 };
+
+ 
 
 export default Archivos;

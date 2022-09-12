@@ -218,13 +218,13 @@ const Cultivo = (props) => {
               info_cuando_cultivar={cultivo.cul_cuando_cultivar_go}
             />
             <ComoCultivar infocomo_cultivar={cultivo.cul_como_cultivar_go} />
-            <Fertilizantes info_fertilizantes={cultivo.cul_fertelizantes_go} />
+            <Fertilizantes info_fertelizantes={cultivo.cul_fertelizantes_go} />
             <GoodBadVecinos
               info_buenos_vecinos={cultivo.cul_buenos_vecinos_go}
               info_malo_vecinos={cultivo.cul_malos_vecinos_go}
             />
 
-            <Plagas info_plagas={cultivo.cul_plagas_comunes} />
+            <Plagas info_plagas={cultivo.cul_plagas_comunes_go} />
 
             <MetodosReproduccion
               info_m_reproduccion={cultivo.cul_metodo_reproduccion_go}
@@ -353,7 +353,7 @@ const Cultivo = (props) => {
         <div className="col-md-4">
           <div className="position-sticky" style={{ top: "2rem" }}>
             <BannerPublicidad info_publicidad={cultivo.cul_publicidad_go} />
-            <Archivos />
+            <Archivos info_archivo={cultivo.cul_archivos_go}/>
           </div>
         </div>
       </div>

@@ -15,9 +15,9 @@ const ComoCultivar = (props) => {
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" bis_skin_checked="1">
         <CardCultivo
           nombre_titulo="Tamaño maceta"
-          icondecultivo="https://cdn.lordicon.com/bxhycwah.json"
+          icondecultivo="https://img.icons8.com/office/80/000000/potted-plant.png"
           detalle={props.infocomo_cultivar.cul_tamano_maceta_go}
-          iconeimagen={"icon"}
+          iconeimagen={"imagen"}
         ></CardCultivo>
         <CardCultivo
           nombre_titulo="Espacio maceta"
@@ -33,9 +33,9 @@ const ComoCultivar = (props) => {
         ></CardCultivo>
         <CardCultivo
           nombre_titulo="Plantar en casa"
-          icondecultivo="https://cdn.lordicon.com/cxfjebxp.json"
+          icondecultivo="https://img.icons8.com/office/80/000000/home--v1.png"
           detalle={props.infocomo_cultivar.cul_plantar_casa_go}
-          iconeimagen={"icon"}
+          iconeimagen={"imagen"}
         ></CardCultivo>
         <CardCultivo
           nombre_titulo={"Piso termico"}
@@ -58,7 +58,7 @@ const ComoCultivar = (props) => {
         <CardCultivo
           nombre_titulo="Cantidad de riego"
           icondecultivo="https://img.icons8.com/office/80/000000/plant-under-rain.png"
-          infocomo_cultivar={props.infocomo_cultivar.cul_riego_cantidad_go}
+          detalle={props.infocomo_cultivar.cul_riego_cantidad_go}
           iconeimagen={"imagen"}
         ></CardCultivo>
         <CardCultivo
