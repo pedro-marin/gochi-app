@@ -7,10 +7,11 @@ const ItemsCategoriaCultivo = (props) => {
       <div className="card shadow-sm">
         <LazyLoadImage
           className={"bd-placeholder-img card-img-top"}
-          effect = "blur"
+          effect="blur"
           src={props.imagen}
           alt={"gochi"}
-        />
+          visibleByDefault={props.imagen === true} />
+        
         <div className="card-body">
           <p className="card-text">
             {props.nombre} - {props.descripcion}

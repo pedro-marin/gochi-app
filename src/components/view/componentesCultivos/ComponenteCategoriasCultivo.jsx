@@ -26,6 +26,7 @@ const ComponenteCategoriasCultivo = (props) => {
                            total = {categoria.cat_cul_totalcultivos_go} 
                            imagen = {categoria.cat_cul_imagen_go}
                            href = {categoria.cat_cul_href_go} />
+                           
   );
 
 

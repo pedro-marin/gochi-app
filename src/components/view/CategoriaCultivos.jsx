@@ -16,7 +16,7 @@ const CategoriaCultivos = (props) => {
       <hr className="divider" />
       <div className="row mx-0 px-0">
         <LazyLoadComponent>
-          <ComponenteCategoriasCultivo />
+          <ComponenteCategoriasCultivo/>
         </LazyLoadComponent>
         <BannerPublicidad />
       </div>

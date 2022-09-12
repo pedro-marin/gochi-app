@@ -2,11 +2,11 @@ import React from "react";
 import "../stylecomponente/cardcultivo.css";
 
 function CardCultivo(props) {
-  const estilo={
-    width: '30%',
-    height: '10%',
-    clippath: "circle(50% at 50% 50%)"
-  }
+  const estilo = {
+    width: "30%",
+    height: "10%",
+    clippath: "circle(50% at 50% 50%)",
+  };
   return (
     <div class="col" bis_skin_checked="1">
       <div className="card text-center" style={{ borderStyle: "none" }}>
@@ -26,7 +26,8 @@ function CardCultivo(props) {
               <img
                 src={props.icondecultivo}
                 alt="imagen"
-                style={{ estilo}}
+                loading="lazy"
+                style={{ estilo }}
               />
             </>
           ) : null}
@@ -36,6 +37,7 @@ function CardCultivo(props) {
                 src={props.iconotoño}
                 alt="imagen"
                 style={{ estilo }}
+                loading="lazy"
               />
             </>
           ) : null}
@@ -45,7 +47,8 @@ function CardCultivo(props) {
               <img
                 src={props.iconverano}
                 alt="imagen"
-                style={{ estilo}}
+                style={{ estilo }}
+                loading="lazy"
               />
             </>
           ) : null}
@@ -54,16 +57,18 @@ function CardCultivo(props) {
               <img
                 src={props.iconprimavera}
                 alt="imagen"
-                style={{estilo}}
+                style={{ estilo }}
+                loading="lazy"
               />
             </>
           ) : null}
           {props.estacion === "Invierno" ? (
             <>
-               <img
+              <img
                 src={props.iconinvierno}
                 alt="imagen"
-                style={{estilo}}
+                style={{ estilo }}
+                loading="lazy"
               />
             </>
           ) : null}
