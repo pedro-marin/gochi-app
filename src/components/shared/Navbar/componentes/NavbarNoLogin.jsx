@@ -17,7 +17,7 @@ function NavbarNoLogin() {
     >
       <div className="container-fluid ">
         <a className="navbar-brand ps-2" href="/" style={{ fontSize: "140%" }}>
-          <img src={gochi_logo} width="50px" height="50px" alt="Gochi" />
+          <img src={gochi_logo} width="50px" height="50px" alt="mihuertafacil" />
           Mihuertafacil.com
         </a>
         <button

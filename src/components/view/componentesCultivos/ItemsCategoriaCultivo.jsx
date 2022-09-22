@@ -9,9 +9,8 @@ const ItemsCategoriaCultivo = (props) => {
           className={"bd-placeholder-img card-img-top"}
           effect="blur"
           src={props.imagen}
-          alt={"gochi"}
+          alt={"mihuertafacil"}
           visibleByDefault={props.imagen === true} />
-        
         <div className="card-body">
           <p className="card-text">
             {props.nombre} - {props.descripcion}

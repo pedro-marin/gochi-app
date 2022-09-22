@@ -31,7 +31,7 @@ const Curso = (props) => {
       props.history.push("/login");
     }
     obtenerDatos();
-    document.title = "Gochi - Curso";
+    document.title = "mihuertafacil - Curso";
   }, [props.history, obtenerDatos]);
 
   return curso !== null ? (

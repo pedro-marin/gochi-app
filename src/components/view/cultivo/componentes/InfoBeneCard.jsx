@@ -3,9 +3,11 @@ import React from "react";
 const InfoBeneCard = (props) => {
   let data = props.info_beneficios;
   const beneficios = data.map((beneficio, index) => (
+    
     <li key={index}>
       <p>{beneficio.descripcion}</p>
     </li>
+    
   ));
   return (
     <div className="col-md-6">

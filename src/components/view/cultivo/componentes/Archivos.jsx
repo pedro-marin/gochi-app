@@ -1,9 +1,9 @@
 import React from "react";
 
 const Archivos = (props) => {
-  const listaArchivos = props.info_archivo;
+  const listaArchivos = props.infoarchivo;
   const Archivos = listaArchivos.map((publicidad, index) => (
-    <div class="my-3 mx-auto text-center">
+    <div key={index} class="my-3 mx-auto text-center">
       <p className="fs-5 fw-bold">{publicidad.nombre}</p>
       
         <a href={publicidad.enlace}><img src="https://img.icons8.com/office/80/000000/export-pdf.png"alt="imagen"/>

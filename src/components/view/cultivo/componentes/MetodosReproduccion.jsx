@@ -5,7 +5,7 @@ const MetodosReproduccion = (props) => {
   
   const listaMreproduccion = props.info_m_reproduccion;
   const mreproducion = listaMreproduccion.map((publicidad, index) => (
-    <CardMBFM  name={publicidad.name}
+    <CardMBFM  key={index} name={publicidad.name}
     imagen={publicidad.imagen}
     descripcion={publicidad.descripcion}> </CardMBFM>
   ));

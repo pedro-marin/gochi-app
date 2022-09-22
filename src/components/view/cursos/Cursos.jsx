@@ -16,7 +16,7 @@ const Cursos = (props) => {
       props.history.push("/login");
     }
     obtenerDatos();
-    document.title = "Gochi - Cursos";
+    document.title = "mihuertafacil - Cursos";
   }, [props.history]);
 
   const obtenerDatos = async () => {

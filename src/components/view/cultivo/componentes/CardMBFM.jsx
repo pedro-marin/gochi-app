@@ -27,11 +27,7 @@ function CardMBFM(props) {
 
           <h2 className="">{props.name}</h2>
           <p className="">{props.descripcion}</p>
-          <p>
-            <a className="btn btn-secondary" href="/">
-              View details »
-            </a>
-          </p>
+          
         </ul>
       </div>
     </div>

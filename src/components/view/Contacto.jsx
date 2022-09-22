@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 const Contacto = () => {
 
   useEffect(()=> {
-    document.title = "Gochi - Contacto";
+    document.title = "mihuertafacil - Contacto";
   },[])
 
   return (

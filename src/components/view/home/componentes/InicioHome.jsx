@@ -1,23 +1,23 @@
 import React from "react";
 import "./stylecomponentes/iniciohome.css";
 
-function InicioHome({
-  titulo,
-  descripcion,
-}) {
+function InicioHome({ titulo, descripcion }) {
   return (
     <div className="contenedorinicio">
-      <div className="col-md-7 p-lg-1 mx-auto p-5 text-center bg-dark bg-opacity-25">
-      <h1 className="display-1 p-lg-2 text-white letratitulo">{titulo}</h1>
+    <div className="col-md-7 p-lg-1 mx-auto p-5 text-center bg-dark bg-opacity-25">
+          <h1 className="display-1 p-lg-2 text-white letratitulo">{titulo}</h1>
           <div>
-          <p className="display-5 fs-2 p-lg-1  text-white letradescripcion " >{descripcion}</p>
-         
+            <p className="display-5 fs-2 p-lg-1  text-white letradescripcion ">
+              {descripcion}
+            </p>
           </div>
-          
-      </div>
-      <a className="btn btn-success bg-success bg-opacity-75  w-auto p-2 fs-4 letradescripcion" href="/registro">
-            Registrate
-          </a>
+        </div>
+        <a
+          className="btn btn-success bg-success bg-opacity-75  w-auto p-2 fs-4 letradescripcion"
+          href="/registro"
+        >
+          Registrate
+        </a>
     </div>
   );
 }

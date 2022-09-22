@@ -6,33 +6,78 @@ import gochi_logo from "../../assets/img/gochi_logo_sf.svg";
 import { useState } from "react";
 import { auth, db } from "../../firebase";
 import { withRouter } from "react-router-dom";
-
+import "../../stylesheets/Home.css";
 
 const Registro = (props) => {
   useEffect(() => {
-    document.title = "Gochi - Registro";
+    document.title = "mihuertafacil - Registro";
   }, []);
 
   const [username, setUsername] = useState("");
-  const [nombre, setNombre] = useState("");
+  const [nombre=true, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [email, setEmail] = useState("");
   const [contrasena, setContrasena] = useState("");
   const [confirmarpassword, setConfirmarpassword] = useState("");
   const [error, setError] = useState(null);
 
+  const expresiones = {
+    usuario: /^[a-zA-Z0-9_-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+    nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
+    password: /^.{6,12}$/, // 6 a 12 digitos.
+    correo: /^\w+([.-_+]?\w+)*@(gmail||hotmail)*\.(cl||com)+$/,
+  };
+
   const procesarInputs = (event) => {
     event.preventDefault();
+    if (!nombre.trim()) {
+      setError("Ingrese su nombre");
+      return;
+    }
+    if (expresiones.nombre.test(nombre) === false) {
+      setError("Nombre no valido, recuerde ingresar solo letras y acentos");
+      return;
+    }
+    if (!apellido.trim()) {
+      setError("Ingrese su apellido");
+      return;
+    }
+    if (expresiones.nombre.test(apellido) === false) {
+      setError("Apellido no valido, , recuerde ingresar solo letras y acentos");
+      return;
+    }
+    if (!username.trim()) {
+      setError("Ingrese nombre de usuario");
+      return;
+    }
+    if (expresiones.usuario.test(username) === false) {
+      setError(
+        "Usuario no valido, , recuerde ingresar solo letras, numeros y guion o guion bajo"
+      );
+      return;
+    }
     if (!email.trim()) {
-      setError("Ingrese Email");
+      setError("Ingrese su Email");
+      return;
+    }
+    if (expresiones.correo.test(email) === false) {
+      setError("Correo no invalido");
+      return;
+    }
+    if (expresiones.password.test(contrasena) === false) {
+      setError("Contraseña no invalida");
       return;
     }
     if (!contrasena.trim()) {
-      setError("Ingresa Constraseña");
+      setError("Ingresa su Contraseña");
       return;
     }
-    if (contrasena.length < 6) {
-      setError("Contreseña de 6 o más caracteres");
+    if (!confirmarpassword.trim()) {
+      setError("Confirme su contraseña");
+      return;
+    }
+    if (contrasena !== confirmarpassword) {
+      setError("No coincide contraseña");
       return;
     }
     setError(null);
@@ -42,27 +87,30 @@ const Registro = (props) => {
   const registrarFirebase = React.useCallback(async () => {
     try {
       const res = await auth.createUserWithEmailAndPassword(email, contrasena);
-      await db.collection("usuarios").doc(res.user.uid).set({
-        username: username,
-        uid: res.user.uid,
-        displayName: nombre+' '+apellido,
-        email: res.user.email,
-        img_profile: '',
-        about_me: '',
-        instagram: {
-          exist: false,
-          url: "",
-        },
-        facebook: {
-          exist: false,
-          url: "",
-        },
-        youtube: {
-          exist: false,
-          url: "",
-        },
-      });
-      
+      await db
+        .collection("usuarios")
+        .doc(res.user.uid)
+        .set({
+          username: username,
+          uid: res.user.uid,
+          displayName: nombre + " " + apellido,
+          email: res.user.email,
+          img_profile: "",
+          about_me: "",
+          instagram: {
+            exist: false,
+            url: "",
+          },
+          facebook: {
+            exist: false,
+            url: "",
+          },
+          youtube: {
+            exist: false,
+            url: "",
+          },
+        });
+setNombre("hola");
       setContrasena("");
       setEmail("");
       setError(null);
@@ -84,7 +132,8 @@ const Registro = (props) => {
       <div className="row justify-content-center">
         <div
           className="contenedortodo col-11 col-sm-8 col-md-6 col-xl-6 rounded"
-          style={{backgroundColor: "#e7f6a8",
+          style={{
+            backgroundColor: "#e7f6a8",
             borderStyle: "solid",
             borderWidth: "1px",
             borderColor: "#b3c760",

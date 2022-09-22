@@ -9,7 +9,7 @@ const Cultivos = (props) => {
     } else {
       props.history.push("/login");
     }*/
-    document.title = `Gochi - ${props.categoria}`;
+    document.title = `mihuertafacil - ${props.categoria}`;
   }, [props]);
   return (
     <div>

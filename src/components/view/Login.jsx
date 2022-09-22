@@ -10,7 +10,7 @@ import { useCallback } from "react";
 
 const Login = (props) => {
   useEffect(() => {
-    document.title = "Gochi - Login";
+    document.title = "mihuertafacil - Login";
   }, []);
 
   const [email, setEmail] = useState("");

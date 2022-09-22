@@ -16,6 +16,7 @@ const Home = () => {
   return (
     <div className="">
     <InicioHome
+    
       titulo="Bienvenido a mihuertafacil"
       descripcion="Participa de un modelo de vida sostenible. Enseña a los demás el
       respeto por la naturaleza y lo que esta ofrece."

@@ -7,7 +7,7 @@ import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 const CategoriaCultivos = (props) => {
   useEffect(() => {
-    document.title = "Gochi - Categorías";
+    document.title = "mihuertafacil - Categorías";
   }, [props.history]);
 
   return (

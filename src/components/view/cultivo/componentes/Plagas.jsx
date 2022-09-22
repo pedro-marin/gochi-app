@@ -4,7 +4,8 @@ import CardMBFM from "./CardMBFM";
 const Plagas = (props) => {
   const listaPlagas = props.info_plagas;
   const Plagas = listaPlagas.map((publicidad, index) => (
-    <CardMBFM  name={publicidad.name}
+    <CardMBFM key={index} 
+    name={publicidad.name}
     imagen={publicidad.imagen}
     descripcion={publicidad.descripcion}> </CardMBFM>
   ));

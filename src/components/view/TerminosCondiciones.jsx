@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const TerminosCondiciones = () => {
   useEffect(() => {
-    document.title = "Gochi - Términos y condiciones";
+    document.title = "mihuertafacil - Términos y condiciones";
   }, []);
 
   return (

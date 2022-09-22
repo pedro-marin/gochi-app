@@ -11,7 +11,7 @@ const CuandoCultivar = (props) => {
         borderColor: "#e7f6a8",
       }}
     >
-      <h2 className="mb-1 pb-3 text-center">Como Cultivar</h2>
+      <h2 className="mb-1 pb-3 text-center">Cuando Cultivar</h2>
       <div
         class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
         bis_skin_checked="1"

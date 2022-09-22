@@ -11,7 +11,7 @@ const UserProfile = (props) => {
     } else {
       props.history.push("/login");
     }
-    document.title = "Gochi - Mi Perfil";
+    document.title = "mihuertafacil - Mi Perfil";
   }, [props]);
 
   return props.usuario !== false ? (

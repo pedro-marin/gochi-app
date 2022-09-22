@@ -188,16 +188,16 @@ const Cultivo = (props) => {
       props.history.push("/login");
     }*/
     obtenerDatos();
-    document.title = `Gochi - ${props.name}`;
+    document.title = `mihuertafacil - ${props.name}`;
   }, [props, obtenerDatos]);
 
   return cultivo !== null ? (
     <div className="container">
       <EncabezadoCultivo
-        usuario = {props.usuario}
+        usuario={props.usuario}
         nombreCultivo={cultivo.cul_name_go}
-        idCultivo = {cultivo._id}
-        imgCultivo = {cultivo.cul_icon_go}
+        idCultivo={cultivo._id}
+        imgCultivo={cultivo.cul_icon_go}
         nombre_cientifico={cultivo.cul_cientifico_name_go}
         descripcion={cultivo.cul_description_go}
         imagen_banner={cultivo.cul_banner_go}
@@ -205,7 +205,8 @@ const Cultivo = (props) => {
       <InfoBeneContraCultivo
         info_beneficios={cultivo.cul_info_nutricional_go.cul_beneficios_go}
         info_contraindicaciones={
-          cultivo.cul_info_nutricional_go.cul_contraindicaciones_go}
+          cultivo.cul_info_nutricional_go.cul_contraindicaciones_go
+        }
       />
       <div className="row">
         <div className="col-md-8">
@@ -356,12 +357,14 @@ const Cultivo = (props) => {
         <div className="col-md-4">
           <div className="position-sticky" style={{ top: "2rem" }}>
             <BannerPublicidad info_publicidad={cultivo.cul_publicidad_go} />
-            <Archivos info_archivo={cultivo.cul_archivos_go}/>
+            <Archivos infoarchivo={cultivo.cul_archivos_go} />
           </div>
         </div>
       </div>
       <a href="https://icons8.com/icon/1_ZaI6jvDGNo/suelo">by Icons8</a>
-      <a href="https://icons8.com/icon/vc6t1qwimoh5/growing-plant">Growing Plant icon by Icons8</a>
+      <a href="https://icons8.com/icon/vc6t1qwimoh5/growing-plant">
+        Growing Plant icon by Icons8
+      </a>
     </div>
   ) : (
     <Cargando />

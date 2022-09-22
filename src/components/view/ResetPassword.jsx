@@ -11,7 +11,7 @@ import {withRouter} from 'react-router-dom'
 const ResetPassword = (props) => {
 
     useEffect(()=> {
-        document.title = "Gochi - Recupera tu contraseña";
+        document.title = "mihuertafacil - Recupera tu contraseña";
       },[])
     
       const [email, setEmail] = useState('');
