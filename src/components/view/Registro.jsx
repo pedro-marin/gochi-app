@@ -14,7 +14,7 @@ const Registro = (props) => {
   }, []);
 
   const [username, setUsername] = useState("");
-  const [nombre=true, setNombre] = useState("");
+  const [nombre = true, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [email, setEmail] = useState("");
   const [contrasena, setContrasena] = useState("");
@@ -25,7 +25,7 @@ const Registro = (props) => {
     usuario: /^[a-zA-Z0-9_-]{4,16}$/, // Letras, numeros, guion y guion_bajo
     nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
     password: /^.{6,12}$/, // 6 a 12 digitos.
-    correo: /^\w+([.-_+]?\w+)*@(gmail||hotmail)*\.(cl||com)+$/,
+    correo: /^\w+([.-_+]?\w+)*@(gmail||hotmail||cftaraucania)*\.(cl||com)+$/,
   };
 
   const procesarInputs = (event) => {
@@ -110,7 +110,7 @@ const Registro = (props) => {
             url: "",
           },
         });
-setNombre("hola");
+      setNombre("hola");
       setContrasena("");
       setEmail("");
       setError(null);
@@ -148,13 +148,13 @@ setNombre("hola");
               height="30%"
             />
             <h1 className="h2 mb-5 text-center">
-              Iníciate en el autocultivo con Gochi
+              Iníciate en el autocultivo con mihuertafacil
             </h1>
             {error && <div className="alert alert-danger">{error}</div>}
             <p>
               <strong>Ingresa tus datos</strong>
             </p>
-            
+
             <div className="row g-3 mb-3">
               <div className="col-md">
                 <label

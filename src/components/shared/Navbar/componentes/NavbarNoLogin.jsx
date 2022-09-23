@@ -17,7 +17,12 @@ function NavbarNoLogin() {
     >
       <div className="container-fluid ">
         <a className="navbar-brand ps-2" href="/" style={{ fontSize: "140%" }}>
-          <img src={gochi_logo} width="50px" height="50px" alt="mihuertafacil" />
+          <img
+            src={gochi_logo}
+            width="50px"
+            height="50px"
+            alt="mihuertafacil"
+          />
           Mihuertafacil.com
         </a>
         <button
@@ -120,22 +125,40 @@ function NavbarNoLogin() {
             </a>
           </div>
           <div className="offcanvas-header m-auto justify-content-between">
-            <a href="https://z-p15.www.instagram.com/mihuertafacil_/" id="sddfs" className="sfds">
-              <BsInstagram className="mx-2"
-                style={{ color: "red", marginTop: "12rem", fontSize: "30px" }}/>
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=100085545664815">
-                <BsFacebook className="mx-2" style={{ marginTop: "12rem", fontSize: "30px" }} />
-              </a>
-              <a href="twitter">
-                <BsTwitter className="mx-2"
-                  style={{
-                    color: "#27F4F1",
-                    marginTop: "12rem",
-                    fontSize: "30px",
-                  }}
-                />
-              </a>
+            <a
+              href="https://z-p15.www.instagram.com/mihuertafacil_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsInstagram
+                className="mx-2"
+                style={{ color: "red", marginTop: "12rem", fontSize: "30px" }}
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100085545664815"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsFacebook
+                className="mx-2"
+                style={{ marginTop: "12rem", fontSize: "30px" }}
+              />
+            </a>
+            <a
+              href="https://twitter.com/mihuertafacil_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsTwitter
+                className="mx-2"
+                style={{
+                  color: "#27F4F1",
+                  marginTop: "12rem",
+                  fontSize: "30px",
+                }}
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -143,5 +166,4 @@ function NavbarNoLogin() {
   );
 }
 
-
-export default NavbarNoLogin
+export default NavbarNoLogin;

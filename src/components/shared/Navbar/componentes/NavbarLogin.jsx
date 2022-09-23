@@ -26,7 +26,12 @@ const NavbarLogin = (props) => {
     >
       <div className="container-fluid ">
         <a className="navbar-brand ps-2" href="/" style={{ fontSize: "140%" }}>
-          <img src={gochi_logo} width="50px" height="50px" alt="mihuertafacil" />
+          <img
+            src={gochi_logo}
+            width="50px"
+            height="50px"
+            alt="mihuertafacil"
+          />
           Mihuertafacil.com
         </a>
         <button
@@ -63,10 +68,7 @@ const NavbarLogin = (props) => {
                 Nosotros
               </a>
             </li>
-            <li
-              className="nav-item dropdown"
-
-            >
+            <li className="nav-item dropdown">
               <a
                 href="/"
                 className="link-dark text-decoration-none dropdown-toggle"
@@ -85,7 +87,7 @@ const NavbarLogin = (props) => {
               <ul
                 className="dropdown-menu dropdown-menu-end"
                 aria-labelledby="navbarDropdownMenuLink"
-                style={{fontFamily:"sans-serif"}}
+                style={{ fontFamily: "sans-serif" }}
               >
                 <li>
                   <a className="dropdown-item" href="/userprofile">
@@ -93,7 +95,10 @@ const NavbarLogin = (props) => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href={`/configuracion/${auth.currentUser.uid}`}>
+                  <a
+                    className="dropdown-item"
+                    href={`/configuracion/${auth.currentUser.uid}`}
+                  >
                     Configuración
                   </a>
                 </li>
@@ -192,24 +197,36 @@ const NavbarLogin = (props) => {
             />
           </div>
           <div className="offcanvas-header justify-content-center p-0">
-            <a href="wwww.elgochiapp.com" id="sddfs" className="">
+            <a
+              href="https://z-p15.www.instagram.com/mihuertafacil_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsInstagram
                 className="mx-2"
                 style={{ color: "red", fontSize: "30px" }}
               />
-              </a>
-              <a href="https://twitter">
-                <BsFacebook className="mx-2" style={{ fontSize: "30px" }} />
-              </a>
-              <a href="twitter">
-                <BsTwitter
-                  className="mx-2"
-                  style={{
-                    color: "#27F4F1",
-                    fontSize: "30px",
-                  }}
-                />
-              </a>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100085545664815"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsFacebook className="mx-2" style={{ fontSize: "30px" }} />
+            </a>
+            <a
+              href="https://twitter.com/mihuertafacil_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsTwitter
+                className="mx-2"
+                style={{
+                  color: "#27F4F1",
+                  fontSize: "30px",
+                }}
+              />
+            </a>
           </div>
         </div>
       </div>
