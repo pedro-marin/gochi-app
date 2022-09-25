@@ -78,7 +78,7 @@ const NavbarLogin = (props) => {
               >
                 <img
                   src={props.user.img_profile}
-                  alt="mdo"
+                  alt="imgprofile"
                   width="32"
                   height="32"
                   className="rounded-circle"
@@ -143,7 +143,7 @@ const NavbarLogin = (props) => {
               <a
                 href="/categoria"
                 id="dropdownMenu"
-                className="btn btn-outline-warning text-dark  shadow w-100"
+                className="btn text-dark  shadow w-100"
               >
                 Cultivos
               </a>
@@ -153,7 +153,7 @@ const NavbarLogin = (props) => {
             <a
               href="/cursos"
               id="dropdownMenu"
-              className="btn btn-outline-warning text-dark shadow w-100"
+              className="btn text-dark shadow w-100"
             >
               RecopilacionAV
             </a>
@@ -162,7 +162,7 @@ const NavbarLogin = (props) => {
             <a
               href="/userprofile"
               id="dropdownMenu"
-              className="btn btn-outline-warning text-dark shadow w-100"
+              className="btn text-dark shadow w-100"
             >
               Mi perfil
             </a>
@@ -171,7 +171,7 @@ const NavbarLogin = (props) => {
             <a
               href={`/configuracion/${auth.currentUser.uid}`}
               id="dropdownMenu"
-              className="btn btn-outline-warning text-dark shadow w-100"
+              className="btn text-dark shadow w-100"
             >
               Configuracion
             </a>
@@ -181,7 +181,7 @@ const NavbarLogin = (props) => {
             <a
               href="-"
               onClick={() => cerrarSesion()}
-              className="btn btn-outline-warning text-dark shadow w-100"
+              className="btn text-dark shadow w-100"
             >
               Cerrar sesion
             </a>

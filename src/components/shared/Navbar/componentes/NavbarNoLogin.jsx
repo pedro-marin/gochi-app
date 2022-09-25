@@ -59,11 +59,6 @@ function NavbarNoLogin() {
                 Iniciar Sesión
               </a>
             </li>
-            <li className="nav-item pe-2">
-              <a className="nav-link" href="/registro">
-                Registrarse
-              </a>
-            </li>
           </ul>
         </div>
         <div
@@ -83,15 +78,15 @@ function NavbarNoLogin() {
               className="btn-close text-reset opacity-100 border border-dark rounded-circle"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-              style={{ color: "red" }}
+              style={{borderColor:"#64690c" }}
             ></button>
           </div>
-          <div className="offcanvas--">
-            <div className="dropdown offcanvas-header ">
+          <div className="offcanvas-- pt-4">
+            <div className="dropdown offcanvas-header">
               <a
                 href="/categoria"
                 id="dropdownMenu"
-                className="btn btn-outline-warning text-dark  shadow w-100"
+                className="btn text-dark  shadow w-100"
               >
                 Cultivos
               </a>
@@ -101,7 +96,7 @@ function NavbarNoLogin() {
             <a
               href="/nosotros"
               id="dropdownMenu"
-              className="btn btn-outline-warning text-dark shadow w-100"
+              className="btn text-dark shadow w-100"
             >
               Nosotros
             </a>
@@ -110,20 +105,12 @@ function NavbarNoLogin() {
             <a
               href="/login"
               id="dropdownMenu"
-              className="btn btn-outline-warning text-dark shadow w-100"
+              className="btn text-dark shadow w-100"
             >
               Iniciar Sesion
             </a>
           </div>
-          <div className="dropdown offcanvas-header">
-            <a
-              href="/registro"
-              id="dropdownMenu"
-              className="btn btn-outline-warning text-dark shadow w-100"
-            >
-              Registrarse
-            </a>
-          </div>
+         
           <div className="offcanvas-header m-auto justify-content-between">
             <a
               href="https://z-p15.www.instagram.com/mihuertafacil_/"
