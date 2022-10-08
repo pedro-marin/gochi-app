@@ -4,7 +4,7 @@ import "../../../../fuentes/Playball/Playball-Regular.ttf";
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
-import gochi_logo from "../../../../assets/img/gochi_logo_sf.svg";
+import gochi_logo from "../../../../assets/img/mihuertfacil.svg";
 function NavbarNoLogin() {
   return (
     <nav
@@ -16,7 +16,7 @@ function NavbarNoLogin() {
       }}
     >
       <div className="container-fluid ">
-        <a className="navbar-brand ps-2" href="/" style={{ fontSize: "140%" }}>
+        <a className="navbar-brand ps-2" href="/" style={{ fontSize: "140%", backgroundColor:"#e7f6a8" }}>
           <img
             src={gochi_logo}
             width="50px"
@@ -48,7 +48,7 @@ function NavbarNoLogin() {
                 Cultivos
               </a>
             </li>
-            
+
             <li className="nav-item ">
               <a className="nav-link" href="/login">
                 {" "}
@@ -74,7 +74,7 @@ function NavbarNoLogin() {
               className="btn-close text-reset opacity-100 border border-dark rounded-circle"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-              style={{borderColor:"#64690c" }}
+              style={{ borderColor: "#64690c" }}
             ></button>
           </div>
           <div className="offcanvas-- pt-4">
@@ -106,7 +106,7 @@ function NavbarNoLogin() {
               Iniciar Sesion
             </a>
           </div>
-         
+
           <div className="offcanvas-header m-auto justify-content-between">
             <a
               href="https://z-p15.www.instagram.com/mihuertafacil_/"
