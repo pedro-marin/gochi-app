@@ -361,10 +361,6 @@ const Cultivo = (props) => {
           </div>
         </div>
       </div>
-      <a href="https://icons8.com/icon/1_ZaI6jvDGNo/suelo">by Icons8</a>
-      <a href="https://icons8.com/icon/vc6t1qwimoh5/growing-plant">
-        Growing Plant icon by Icons8
-      </a>
     </div>
   ) : (
     <Cargando />
