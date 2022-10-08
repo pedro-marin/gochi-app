@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
-import gochi_logo from "../../../../assets/img/gochi_logo_sf.svg";
+import gochi_logo from "../../../../assets/img/mihuertfacil.svg";
 import { withRouter } from "react-router";
 import { auth } from "../../../../firebase";
 
