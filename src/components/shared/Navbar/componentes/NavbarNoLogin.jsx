@@ -48,11 +48,7 @@ function NavbarNoLogin() {
                 Cultivos
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/nosotros">
-                Nosotros
-              </a>
-            </li>
+            
             <li className="nav-item ">
               <a className="nav-link" href="/login">
                 {" "}

@@ -74,7 +74,7 @@ function Nosotro({
         </a>
       </header>
 
-      <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="p-1 mb-4 bg-light rounded-3">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">{titulo1}</h1>
         </div>
@@ -96,17 +96,7 @@ function Nosotro({
       </div>
 
       <footer class="pt-3 mt-4 text-muted border-top">
-        <section class="banner">
-          <div className="containerB">
-            <div className="boxB col1 ">
-              <img src="{imagen}" className="imgbanner " alt="hola"></img>
-            </div>
-            <div className="boxB col2">
-              <h1 className="texto_nosotros">{titulo4}</h1>
-              <p id="txtBanner">{descripcion4}</p>
-            </div>
-          </div>
-        </section>
+        
       </footer>
     </div>
   );
