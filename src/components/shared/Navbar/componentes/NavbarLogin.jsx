@@ -90,14 +90,7 @@ const NavbarLogin = (props) => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="dropdown-item"
-                    href={`/configuracion/${auth.currentUser.uid}`}
-                  >
-                    Configuración
-                  </a>
-                </li>
-                <li>
+
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
@@ -162,15 +155,7 @@ const NavbarLogin = (props) => {
               Mi perfil
             </a>
           </div>
-          <div className="dropdown offcanvas-header">
-            <a
-              href={`/configuracion/${auth.currentUser.uid}`}
-              id="dropdownMenu"
-              className="btn text-dark shadow w-100"
-            >
-              Configuracion
-            </a>
-          </div>
+
           <hr className="offcanvas-divider" />
           <div className="dropdown offcanvas-header">
             <a
